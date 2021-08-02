@@ -1,10 +1,10 @@
 <?php
 
-namespace Carbon\Sanitizer\Tests;
+namespace CarbonClean\Sanitizer\Tests;
 
 use InvalidArgumentException;
-use Carbon\Sanitizer\Laravel\Factory;
-use Carbon\Sanitizer\Tests\Fixtures\Filters\CustomFilter;
+use CarbonClean\Sanitizer\Laravel\Factory;
+use CarbonClean\Sanitizer\Tests\Fixtures\Filters\CustomFilter;
 use PHPUnit\Framework\TestCase;
 
 class SanitizerTest extends TestCase

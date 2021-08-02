@@ -1,20 +1,20 @@
 # sanitizer
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/realashleybailey/Carbon?style=flat-square)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/realashleybailey/Carbon?style=flat-square)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/realashleybailey/CarbonClean?style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/realashleybailey/CarbonClean?style=flat-square)
 
 > Sanitization library for PHP and the Laravel framework.
 
 ## Installation
 
 ``` bash
-composer require carbon/sanitizer
+composer require carbonclean/sanitizer
 ```
 
 ## Usage
 
 ``` php
-use Carbon\Sanitizer\Sanitizer;
+use CarbonClean\Sanitizer\Sanitizer;
 
 $data = [
     'title' => ' ',
@@ -62,7 +62,7 @@ You may also Sanitize input in your own FormRequests by using the SanitizesInput
 ``` php
 namespace App\Http\Requests;
 
-use Carbon\Sanitizer\Laravel\SanitizesInput;
+use CarbonClean\Sanitizer\Laravel\SanitizesInput;
 
 class MyAwesomeRequest extends Request
 {
@@ -119,10 +119,10 @@ The following filters are available out of the box:
 
 ## Custom Filters
 
-It is possible to use a closure or name of a class that implements `Carbon\Sanitizer\Contracts\Filter` interface.
+It is possible to use a closure or name of a class that implements `CarbonClean\Sanitizer\Contracts\Filter` interface.
 
 ``` php
-class RemoveStringsFilter implements \Carbon\Sanitizer\Contracts\Filter
+class RemoveStringsFilter implements \CarbonClean\Sanitizer\Contracts\Filter
 {
     public function apply($value, array $options = [])
     {

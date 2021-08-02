@@ -1,6 +1,6 @@
 <?php
 
-namespace Carbon\Sanitizer\Contracts;
+namespace CarbonClean\Sanitizer\Contracts;
 
 interface Filter
 {

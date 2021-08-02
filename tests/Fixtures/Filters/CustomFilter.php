@@ -1,8 +1,8 @@
 <?php
 
-namespace Carbon\Sanitizer\Tests\Fixtures\Filters;
+namespace CarbonClean\Sanitizer\Tests\Fixtures\Filters;
 
-use Carbon\Sanitizer\Contracts\Filter;
+use CarbonClean\Sanitizer\Contracts\Filter;
 
 class CustomFilter implements Filter
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Carbon\Sanitizer\Filters;
+namespace CarbonClean\Sanitizer\Filters;
 
 use Illuminate\Support\Collection;
-use Carbon\Sanitizer\Contracts\Filter;
+use CarbonClean\Sanitizer\Contracts\Filter;
 
 class Cast implements Filter
 {

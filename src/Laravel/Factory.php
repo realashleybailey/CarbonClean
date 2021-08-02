@@ -1,11 +1,11 @@
 <?php
 
-namespace Carbon\Sanitizer\Laravel;
+namespace CarbonClean\Sanitizer\Laravel;
 
 use Closure;
 use InvalidArgumentException;
 
-use Carbon\Sanitizer\Sanitizer;
+use CarbonClean\Sanitizer\Sanitizer;
 
 class Factory
 {

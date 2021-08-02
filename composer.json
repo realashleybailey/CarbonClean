@@ -30,21 +30,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Carbon\\Sanitizer\\": "src/"
+            "CarbonClean\\Sanitizer\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Carbon\\Sanitizer\\Tests\\": "tests/"
+            "CarbonClean\\Sanitizer\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Carbon\\Sanitizer\\Laravel\\SanitizerServiceProvider"
+                "CarbonClean\\Sanitizer\\Laravel\\SanitizerServiceProvider"
             ],
             "aliases": {
-                "Sanitizer": "Carbon\\Sanitizer\\Laravel\\Facade"
+                "Sanitizer": "CarbonClean\\Sanitizer\\Laravel\\Facade"
             }
         }
     },

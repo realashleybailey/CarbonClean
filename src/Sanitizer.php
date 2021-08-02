@@ -1,6 +1,6 @@
 <?php
 
-namespace Carbon\Sanitizer;
+namespace CarbonClean\Sanitizer;
 
 use Closure;
 use InvalidArgumentException;
@@ -8,7 +8,7 @@ use UnexpectedValueException;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\ValidationRuleParser;
 use Illuminate\Validation\ClosureValidationRule;
-use Carbon\Sanitizer\Contracts\Filter;
+use CarbonClean\Sanitizer\Contracts\Filter;
 
 class Sanitizer
 {
@@ -32,17 +32,17 @@ class Sanitizer
      * @var array
      */
     protected $availableFilters = [
-        'capitalize' => \Carbon\Sanitizer\Filters\Capitalize::class,
-        'cast' => \Carbon\Sanitizer\Filters\Cast::class,
-        'escape' => \Carbon\Sanitizer\Filters\EscapeHTML::class,
-        'format_date' => \Carbon\Sanitizer\Filters\FormatDate::class,
-        'lowercase' => \Carbon\Sanitizer\Filters\Lowercase::class,
-        'uppercase' => \Carbon\Sanitizer\Filters\Uppercase::class,
-        'trim' => \Carbon\Sanitizer\Filters\Trim::class,
-        'strip_tags' => \Carbon\Sanitizer\Filters\StripTags::class,
-        'digit' => \Carbon\Sanitizer\Filters\Digit::class,
-        'empty_string_to_null' => \Carbon\Sanitizer\Filters\EmptyStringToNull::class,
-        'boolean' => \Carbon\Sanitizer\Filters\Boolean::class,
+        'capitalize' => \CarbonClean\Sanitizer\Filters\Capitalize::class,
+        'cast' => \CarbonClean\Sanitizer\Filters\Cast::class,
+        'escape' => \CarbonClean\Sanitizer\Filters\EscapeHTML::class,
+        'format_date' => \CarbonClean\Sanitizer\Filters\FormatDate::class,
+        'lowercase' => \CarbonClean\Sanitizer\Filters\Lowercase::class,
+        'uppercase' => \CarbonClean\Sanitizer\Filters\Uppercase::class,
+        'trim' => \CarbonClean\Sanitizer\Filters\Trim::class,
+        'strip_tags' => \CarbonClean\Sanitizer\Filters\StripTags::class,
+        'digit' => \CarbonClean\Sanitizer\Filters\Digit::class,
+        'empty_string_to_null' => \CarbonClean\Sanitizer\Filters\EmptyStringToNull::class,
+        'boolean' => \CarbonClean\Sanitizer\Filters\Boolean::class,
     ];
 
     /**
@@ -170,7 +170,7 @@ class Sanitizer
         } elseif (in_array(Filter::class, class_implements($filter))) {
             return (new $filter)->apply($value, $options);
         } else {
-            throw new UnexpectedValueException("Invalid filter [$name] must be a Closure or a class implementing the Carbon\Sanitizer\Contracts\Filter interface.");
+            throw new UnexpectedValueException("Invalid filter [$name] must be a Closure or a class implementing the CarbonClean\Sanitizer\Contracts\Filter interface.");
         }
     }
 

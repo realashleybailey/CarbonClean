@@ -1,8 +1,8 @@
 <?php
 
-namespace Carbon\Sanitizer\Tests;
+namespace CarbonClean\Sanitizer\Tests;
 
-use Carbon\Sanitizer\Sanitizer;
+use CarbonClean\Sanitizer\Sanitizer;
 
 trait SanitizesData
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Carbon\Sanitizer\Filters;
+namespace CarbonClean\Sanitizer\Filters;
 
 use Carbon\Carbon as DateTime;
-use Carbon\Sanitizer\Contracts\Filter;
+use CarbonClean\Sanitizer\Contracts\Filter;
 
 class FormatDate implements Filter
 {

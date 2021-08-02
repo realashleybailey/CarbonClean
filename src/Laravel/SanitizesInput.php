@@ -1,6 +1,6 @@
 <?php
 
-namespace Carbon\Sanitizer\Laravel;
+namespace CarbonClean\Sanitizer\Laravel;
 
 /**
  * @see \Illuminate\Foundation\Http\FormRequest

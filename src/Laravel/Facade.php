@@ -1,6 +1,6 @@
 <?php
 
-namespace Carbon\Sanitizer\Laravel;
+namespace CarbonClean\Sanitizer\Laravel;
 
 use Illuminate\Support\Facades\Facade as LaravelFacade;
 

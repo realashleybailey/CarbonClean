@@ -1,8 +1,8 @@
 <?php
 
-namespace Carbon\Sanitizer\Tests\Filters;
+namespace CarbonClean\Sanitizer\Tests\Filters;
 
-use Carbon\Sanitizer\Tests\SanitizesData;
+use CarbonClean\Sanitizer\Tests\SanitizesData;
 use PHPUnit\Framework\TestCase;
 
 class StripTagsTest extends TestCase

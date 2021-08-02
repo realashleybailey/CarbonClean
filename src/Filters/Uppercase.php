@@ -1,8 +1,8 @@
 <?php
 
-namespace Carbon\Sanitizer\Filters;
+namespace CarbonClean\Sanitizer\Filters;
 
-use Carbon\Sanitizer\Contracts\Filter;
+use CarbonClean\Sanitizer\Contracts\Filter;
 
 class Uppercase implements Filter
 {
