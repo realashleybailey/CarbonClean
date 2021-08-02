@@ -1,5 +1,5 @@
 {
-    "name": "carbon/sanitizer",
+    "name": "carbonclean/sanitizer",
     "description": "Sanitization library for PHP and the Laravel framework.",
     "keywords": [
         "laravel",
