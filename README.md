@@ -1,14 +1,14 @@
 # sanitizer
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/elegantweb/sanitizer?style=flat-square)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/elegantweb/sanitizer/test?style=flat-square)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/realashleybailey/Carbon?style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/realashleybailey/Carbon?style=flat-square)
 
 > Sanitization library for PHP and the Laravel framework.
 
 ## Installation
 
 ``` bash
-composer require elegantweb/sanitizer
+composer require carbon/sanitizer
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ use Carbon\Sanitizer\Sanitizer;
 
 $data = [
     'title' => ' ',
-    'name' => ' sina ',
+    'name' => ' John Doe ',
     'birth_date' => '06/25/1980',
     'email' => 'JOHn@DoE.com',
     'json' => '{"name":"value"}',
@@ -42,7 +42,7 @@ Will result in:
 ``` php
 [
     'title' => null,
-    'name' => 'Sina',
+    'name' => 'John Doe',
     'birth_date' => 'June 25, 1980',
     'email' => 'john@doe.com',
     'json' => ['name' => 'value'],
@@ -62,7 +62,7 @@ You may also Sanitize input in your own FormRequests by using the SanitizesInput
 ``` php
 namespace App\Http\Requests;
 
-use Elegant\Sanitizer\Laravel\SanitizesInput;
+use Carbon\Sanitizer\Laravel\SanitizesInput;
 
 class MyAwesomeRequest extends Request
 {
@@ -119,10 +119,10 @@ The following filters are available out of the box:
 
 ## Custom Filters
 
-It is possible to use a closure or name of a class that implements `Elegant\Sanitizer\Contracts\Filter` interface.
+It is possible to use a closure or name of a class that implements `Carbon\Sanitizer\Contracts\Filter` interface.
 
 ``` php
-class RemoveStringsFilter implements \Elegant\Sanitizer\Contracts\Filter
+class RemoveStringsFilter implements \Carbon\Sanitizer\Contracts\Filter
 {
     public function apply($value, array $options = [])
     {
@@ -145,7 +145,3 @@ You can easily extend the Sanitizer library by adding your own custom filters, j
 ``` php
 \Sanitizer::extend($filterName, $closureOrClassName);
 ```
-
-## Inspiration
-
-- [WAAVI Sanitizer](https://github.com/Waavi/Sanitizer)
