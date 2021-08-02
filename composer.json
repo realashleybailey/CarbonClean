@@ -1,0 +1,54 @@
+{
+    "name": "carbon/sanitizer",
+    "description": "Sanitization library for PHP and the Laravel framework.",
+    "keywords": [
+        "laravel",
+        "sanitation",
+        "input sanitation",
+        "input sanitizer",
+        "input",
+        "transform input",
+        "input filter"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ashley Bailey",
+            "email": "admin@ashleybailey.me"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "illuminate/validation": "^6.0|^7.0|^8.0",
+        "nesbot/carbon": "^1.0|^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Carbon\\Sanitizer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Carbon\\Sanitizer\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Carbon\\Sanitizer\\Laravel\\SanitizerServiceProvider"
+            ],
+            "aliases": {
+                "Sanitizer": "Carbon\\Sanitizer\\Laravel\\Facade"
+            }
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
